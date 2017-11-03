@@ -3,10 +3,10 @@ Made to follow along GraphQL tutorial on Udemy.
 
 node modules notes:
 
-"axios": Makes HTTP requests to database
-"express": Simple server
-"graphql": Data query library
-"express-graphql": Communicates between express and GraphQL
-"json-server": Simple JSON database server
-"lodash": JavaScript utilities
-"nodemon": Monitors files, and automatically restarts node scripts
+- "axios": Makes HTTP requests to database
+- "express": Simple server
+- "graphql": Data query library
+- "express-graphql": Communicates between express and GraphQL
+- "json-server": Simple JSON database server
+- "lodash": JavaScript utilities
+- "nodemon": Monitors files, and automatically restarts node scripts
