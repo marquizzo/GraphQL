@@ -1,0 +1,6 @@
+.material-icons{
+  cursor: pointer;
+}
+.material-icons:hover{
+  color: #d00;
+}
