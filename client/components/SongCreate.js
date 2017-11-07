@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import gql from 'graphql-tag';
-import{graphql} from 'react-apollo';
+import gql from 'graphql-tag';    // Creates query string into query variable
+import{graphql} from 'react-apollo';  // Takes a query, sandwiches together with React Component
 import {Link, hashHistory} from 'react-router';
 import queryFetchSongs from '../queries/fetchSongs';
 
@@ -18,7 +18,7 @@ class SongCreate extends Component {
     // Execute mutation with title variable
     this.props.mutate({
       variables: {title: this.state.title},
-      refetchQueries: [{query: queryFetchSongs}]  // Fetches songs after mutation is complete
+      refetchQueries: [{query: queryFetchSongs}]  // Fetches new songs list after mutation is complete
     })
       .then(() => hashHistory.push("/"))   // Triggered upon GQL server response
       .catch(() => null); // Good for validation errors from backend
